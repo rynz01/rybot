@@ -51,7 +51,6 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       'host': 'Host',
       'advanced': 'Advanced',
       'info': 'Info',
-      '': 'No Category',
     }
     for (let plugin of Object.values(global.plugins))
       if (plugin && 'tags' in plugin)
@@ -80,13 +79,13 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │ *%exp XP*
 │ Tersisa *%limit Limit*
 │
-│ Tanggal: *%week %weton, %date*
+│ Tanggal: *%week , %date*
 │ Waktu: *%time*
 │
 │ Uptime: *%uptime* (*%muptime*)
 │ Database: %rtotalreg of %totalreg
-│ Github:
-│ %github
+│ Thanks to:
+│ @nurutomo
 ╰────
 %readmore`
     let header = conn.menu.header || '╭─「 %category 」'
