@@ -15,7 +15,7 @@ let rl = Readline.createInterface(process.stdin, process.stdout)
 let WAConnection = simple.WAConnection(_WAConnection)
 
 
-global.owner = ['6281515860089'] 
+global.owner = ['6283856085455'] 
 global.mods = ['6283856085455'] 
 global.prems = ['6283856085455'] 
 global.APIs = { // API Prefix
