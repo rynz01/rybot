@@ -1,7 +1,7 @@
 let handler  = async (m, { conn }) => {
   conn.reply(m.chat,`${pickRandom(global.salam)}`, m)
 }
-handler.customPrefix = /assalamualaikum/
+handler.customPrefix = /assalamualaikum$/
 handler.command = new RegExp
 handler.owner = false
 handler.mods = false
