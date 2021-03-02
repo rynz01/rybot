@@ -28,7 +28,7 @@ function pickRandom(list) {
 
 
 global.salam= [
-'waalaikumsalam kakak'
-'waalaikumsalam'
-'iya waalaikumsalam'
+'waalaikumsalam kakak',
+'waalaikumsalam',
+'iya waalaikumsalam',
 ]
