@@ -1,11 +1,12 @@
 let handler = async m => m.reply(`
-selamat anda mendapatkan exp sebanyak ${handler.exp}
+conn.reply(m.chat, `*Jawaban Benar!*\n+9999 XP`, m)
+    global.DATABASE._data.users[m.sender].exp += 9999
 
 
 
 `.trim()) // Tambah sendiri kalo mau
 
-handler.exp = 5555555555
+
 handler.command = /^cheat$/i
 handler.owner = true
 module.exports = handler
