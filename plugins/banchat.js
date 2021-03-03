@@ -4,7 +4,7 @@ let handler = async (m, { conn, participants }) => {
     m.reply('*Sekarang public dimatikan di group ini*')
   // } else m.reply('Ada nomor host disini...')
 }
-handler.help = ['public off']
+handler.help = ['publicoff']
 handler.tags = ['owner']
 handler.command = /^publicoff$/i
 handler.owner = true
