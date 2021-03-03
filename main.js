@@ -101,6 +101,7 @@ conn.handler = async function (m) {
         limit: 10,
         lastclaim: 0,
         registered: false,
+        if (!'nolink' in chat) chat.nolink = false       
         name: conn.getName(m.sender),
         age: -1,
         regTime: -1,
@@ -118,6 +119,7 @@ conn.handler = async function (m) {
       } else global.DATABASE._data.chats[m.chat] = {
         isBanned: false,
         welcome: false,
+        nolink: false,
         sWelcome: '',
         sBye: '',
         delete: true
@@ -125,6 +127,14 @@ conn.handler = async function (m) {
     } catch (e) {
       console.log(e, global.DATABASE.data)
     }
+    if(enable.nolink && !m.fromMe && m.isGroup && !isAdmin && isBotAdmin) {
+		if (m.text.match(/(https:\/\/chat.whatsapp.com)/gi)) {
+            conn.updatePresence(m.chat, Presence.composing) 
+			 conn.reply(m.chat, `*Sorry, you will be removed from this group!*`, m).then(() => {
+			conn.groupRemove(m.chat, [m.sender])
+			 })
+        }
+     }
     if (!m.fromMe && opts['self']) return
     if (!m.text) return
     if (m.isBaileys) return
