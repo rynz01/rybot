@@ -159,6 +159,10 @@ if (!m.fromMe && m.text.match(/(assalamualaikum|Assalamualaikum)/gi)) {
 		conn.updatePresence(m.chat, Presence.recording) 
 		conn.sendFile(m.chat, 'audio/jawabsalam.mp3', 'tts.opus', null, m, true)
 }
+	  if (!m.fromMe && m.text.match(/(anj|asw|gob|bod)/gi)) {
+		conn.updateMessageType(m.chat, MessageType.Sticker) 
+		.sendFile(m.chat, 'src/sticker.webp', "", null, m, false, { asSticker: true })
+	} 
 
   	for (let name in global.plugins) {
   	  let plugin = global.plugins[name]
