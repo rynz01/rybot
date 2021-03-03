@@ -155,7 +155,7 @@ conn.handler = async function (m) {
         }
      }
 
-if (!m.fromMe && m.text.match(/(assalamualaikum|Assalamualaikum)/)) {
+if (!m.fromMe && m.text.match(/(assalamualaikum|Assalamualaikum)/gi)) {
 		conn.updatePresence(m.chat, Presence.recording) 
 		conn.sendFile(m.chat, 'media/jawabsalam.mp3', 'tts.opus', null, m, true)
 }
