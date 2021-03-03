@@ -13,10 +13,10 @@ function pickRandom(list) {
 
 
 global.rynz = [
-"*Tingkat kecantikan kakak 50%*/npasti tiap hari mandinya 5×",
-"*Tingkat kecantikan kakak 56%*/nKakak mandi berapa kali? kok bisa cantik kayak gitu",
-"*Tingkat kecantikan kakak 62%*/nkakak kok cans banget sih terpesona aku😍",
-"*Tingkat kecantikan kakak 74%*/nKakak rahasianya jadi cantik gimana sih?",
-"*Tingkat kecantikan kakak 86%*/nKakak nih cantik cantik pasti buaya",
-"*Tingkat kecantikan kakak 98%*/nKakak Cantik sih Tapi sayang, Kk Punya orang",
+"*Tingkat kecantikan kakak 50%* pasti tiap hari mandinya 5×",
+"*Tingkat kecantikan kakak 56%* Kakak mandi berapa kali? kok bisa cantik kayak gitu",
+"*Tingkat kecantikan kakak 62%* kakak kok cans banget sih terpesona aku😍",
+"*Tingkat kecantikan kakak 74%* Kakak rahasianya jadi cantik gimana sih?",
+"*Tingkat kecantikan kakak 86%* Kakak nih cantik cantik pasti buaya",
+"*Tingkat kecantikan kakak 98%* Kakak Cantik sih Tapi sayang, Kk Punya orang",
 ]
