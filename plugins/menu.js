@@ -77,9 +77,9 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 ╭━─━〘 *Info user* 〙
 │➥ *User :* %name
 │➥ *Exp : %exp*
-│➥ *Limit : %limit
-│➥ *Tanggal : %week, %date
-│➥ Database : %rtotalreg of totalreg
+│➥ *Limit : %limit*
+│➥ *Tanggal : %week, %date*
+│➥ Database : %otalreg
 ╰━─━─━
 
 %readmore`
@@ -115,7 +115,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
     throw e
   }
 }
-handler.help = ['menu','help','?']
+
 handler.tags = ['main']
 handler.command = /^(menu|help|\?)$/i
 handler.owner = false
