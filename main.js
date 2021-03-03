@@ -93,6 +93,9 @@ conn.handler = async function (m) {
           if (!isNumber(user.age)) user.age = -1
           if (!isNumber(user.regTime)) user.regTime = -1
         }
+        if (!isNumber(user.afk)) user.afk = -1
+        if (!'afkReason' in user) user.afkReason = ''
+
       } else global.DATABASE._data.users[m.sender] = {
         exp: 0,
         limit: 10,
@@ -101,6 +104,9 @@ conn.handler = async function (m) {
         name: conn.getName(m.sender),
         age: -1,
         regTime: -1,
+        afk: -1,
+        afkReason: ''
+      }
       }
       
       let chat
