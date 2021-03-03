@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['nguli']
 handler.tags = ['main']
-handler.command = /^nguli$/i
+handler.command = /^(nguli)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
