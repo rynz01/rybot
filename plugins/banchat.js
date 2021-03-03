@@ -6,7 +6,7 @@ let handler = async (m, { conn, participants }) => {
 }
 handler.help = ['public off']
 handler.tags = ['owner']
-handler.command = /^public off$/i
+handler.command = /^publicoff$/i
 handler.owner = true
 
 module.exports = handler
