@@ -1,10 +1,12 @@
 let handler = async (m, { conn }) => {
   global.DATABASE._data.chats[m.chat].isBanned = false
-  m.reply('Done!')
+  m.reply('*Sekarang Public dinyalakan di group ini*')
 }
-handler.help = ['unbanchat']
+handler.help = ['public on']
 handler.tags = ['owner']
-handler.command = /^unbanchat$/i
+handler.group = true
+handler.command = /^public on$/i
+
 handler.owner = true
 
 module.exports = handler
