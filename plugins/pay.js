@@ -1,5 +1,5 @@
 let { MessageType } = require('@adiwajshing/baileys')
-let pajak = 0.02
+let pajak = 0.00
 let handler = async (m, { conn, text }) => {
   if (!text) throw 'Masukkan jumlah exp yang akan diberi'
   let who
@@ -18,12 +18,12 @@ let handler = async (m, { conn, text }) => {
   users[m.sender].exp -= exp
   users[who].exp += xp
 
-  m.reply(`(${-xp} XP) + (${-pjk} XP (Pajak 2%)) = ( ${-exp} XP)`)
+  m.reply(`(${-xp} XP) + (${-pjk} XP (Pajak 0%)) = ( ${-exp} XP)`)
   conn.fakeReply(m.chat, `+${xp} XP`, who, m.text)
 }
-handler.help = ['pay @user <amount>']
+handler.help = ['transfer @user <jumlah>']
 handler.tags = ['xp']
-handler.command = /^pay$/
+handler.command = /^transfer$/
 handler.rowner = true
 
 module.exports = handler
