@@ -79,7 +79,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 │➥ *Exp : %exp*
 │➥ *Limit : %limit*
 │➥ *Tanggal : %week, %date*
-│➥ Database : %otalreg
+│➥ Database : %totalreg
 ╰━─━─━
 
 %readmore`
