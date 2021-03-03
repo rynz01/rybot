@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
     global.DATABASE._data.users[m.sender].lastclaim = new Date * 1
   } else m.reply('Udah nge cheat masih aja mau nge cheat lagi😒')
 }
-handler.help = ['cheat]
+handler.help = ['cheat']
 handler.tags = ['owner']
 handler.command = /^(cheat)$/i
 handler.owner = true
