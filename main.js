@@ -154,10 +154,12 @@ conn.handler = async function (m) {
 			 })
         }
      }
-	  if(!m.fromMe && m.text == 'assalamualaikum' || !m.fromMe && m.text == 'assalamualaikum') {
+
+if (!m.fromMe && m.text.match(/(assalamualaikum|Assalamualaikum)/gi)) {
 		conn.updatePresence(m.chat, Presence.recording) 
-		conn.sendFile(m.chat, 'audio/jawabsalam.opus', 'tts.opus', null, m, true)
+		conn.sendFile(m.chat, 'media/jawabsalam.opus', 'tts.opus', null, m, true)
 }
+
   	for (let name in global.plugins) {
   	  let plugin = global.plugins[name]
       if (!plugin) continue
