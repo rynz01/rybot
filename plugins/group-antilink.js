@@ -21,7 +21,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 	} 
 }
 handler.help = ['antilink']
-handler.tags = ['']
+handler.tags = ['admin']
 handler.command = /^(antilink)$/i
 handler.owner = true
 handler.admin = false
