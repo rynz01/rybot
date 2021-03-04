@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
     let { name, limit, exp, lastclaim, registered, regTime, age } = global.DATABASE.data.users[m.sender]
     let username = conn.getName(who)
     let str = `
-Name: ${username} h
+Name: ${username} 
 Number: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 Link: https://wa.me/${who.split`@`[0]}${registered ? '\nAge: ' + age : ''}
 `.trim()
