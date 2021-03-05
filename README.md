@@ -14,5 +14,5 @@
 # follow me
 
 
-
+# Thanks to : [`Nurutomo`](https://GitHub.com/Nurutomo)
 
